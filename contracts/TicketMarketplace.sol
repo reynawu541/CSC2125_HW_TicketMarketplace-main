@@ -83,8 +83,8 @@ contract TicketMarketplace is ITicketMarketplace {
 
         uint256 eId = eventId;
 
-        // leaving space for ticket number
-        eId = eId << 128;
+       
+        eId = eId << 128;  // leaving space for ticket number
 
         // Mint NFTs to the buyer
         for (uint128 i = 0; i < ticketCount; i++) {
