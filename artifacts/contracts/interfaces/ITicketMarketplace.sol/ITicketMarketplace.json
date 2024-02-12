@@ -1,0 +1,250 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ITicketMarketplace",
+  "sourceName": "contracts/interfaces/ITicketMarketplace.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newERC20Address",
+          "type": "address"
+        }
+      ],
+      "name": "ERC20AddressUpdate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "maxTickets",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "pricePerTicket",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "pricePerTicketERC20",
+          "type": "uint256"
+        }
+      ],
+      "name": "EventCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "newMaxTickets",
+          "type": "uint128"
+        }
+      ],
+      "name": "MaxTicketsUpdate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newPrice",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "priceType",
+          "type": "string"
+        }
+      ],
+      "name": "PriceUpdate",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "numberOfTickets",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "boughtWith",
+          "type": "string"
+        }
+      ],
+      "name": "TicketsBought",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "ticketCount",
+          "type": "uint128"
+        }
+      ],
+      "name": "buyTickets",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "ticketCount",
+          "type": "uint128"
+        }
+      ],
+      "name": "buyTicketsERC20",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "maxTickets",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pricePerTicket",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pricePerTicketERC20",
+          "type": "uint256"
+        }
+      ],
+      "name": "createEvent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newERC20Address",
+          "type": "address"
+        }
+      ],
+      "name": "setERC20Address",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "newMaxTickets",
+          "type": "uint128"
+        }
+      ],
+      "name": "setMaxTicketsForEvent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "setPriceForTicketERC20",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "eventId",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "setPriceForTicketETH",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

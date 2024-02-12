@@ -3,7 +3,7 @@ node_modules
 
 # Hardhat files
 /cache
-/artifacts
+#/artifacts
 
 # TypeChain files
 /typechain
@@ -13,17 +13,5 @@ node_modules
 /coverage
 /coverage.json
 
-node_modules
-.env
+.DS_Store
 
-# Hardhat files
-/cache
-/artifacts
-
-# TypeChain files
-/typechain
-/typechain-types
-
-# solidity-coverage files
-/coverage
-/coverage.json
