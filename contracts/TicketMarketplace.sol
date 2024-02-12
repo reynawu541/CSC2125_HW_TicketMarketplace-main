@@ -79,7 +79,7 @@ contract TicketMarketplace is ITicketMarketplace {
         require(msg.value >= totalPrice, "Not enough funds supplied to buy the specified number of tickets.");
         
         // confirms that there are enough tickets left for sale
-        require(events[eventId].nextTicketToSell + ticketCount <= events[eventId].maxTickets, "We don't have that many tickets left to sell!");
+        require(events[eventId].nextTicketToSell + ticketCount <= events[eventId].maxTickets, "We don\'t have that many tickets left to sell!");
 
         uint256 eId = eventId;
 
@@ -102,7 +102,7 @@ contract TicketMarketplace is ITicketMarketplace {
         (bool mulSuccess, uint256 totalPrice) = Math.tryMul(events[eventId].pricePerTicketERC20, ticketCount);
         require(mulSuccess, "Overflow happened while calculating the total price of tickets. Try buying smaller number of tickets.");
 
-        require(events[eventId].nextTicketToSell + ticketCount <= events[eventId].maxTickets, "We don't have that many tickets left to sell!");
+        require(events[eventId].nextTicketToSell + ticketCount <= events[eventId].maxTickets, "We don\'t have that many tickets left to sell!");
         IERC20 erc20 = IERC20(ERC20Address);
         require(erc20.allowance(msg.sender, address(this)) >= totalPrice, "Not enough funds supplied to buy the specified number of tickets.");
 
